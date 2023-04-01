@@ -12,7 +12,7 @@ const Royalties = () => {
         <div className='text-2xl font-bold'>
             <h2>CroHogs</h2>
         </div>
-        <div className='flex gap-6'>
+        <div className='flex gap-6 px-4 md:px-0'>
             <div className='bg-secondary px-6 py-2 rounded-lg bg-opacity-80 text-black text-center'>
                 <h3 className='font-bold'>Available to claim</h3>
                 <h3>0.00 CRO</h3>
