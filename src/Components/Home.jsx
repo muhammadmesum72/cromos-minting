@@ -35,15 +35,15 @@ const Home = () => {
   const buttonText = showFullText ? "Minimize" : "Read More";
   return (
     <div className="container mx-auto">
-      <div className="h-screen flex items-center justify-center text-center ">
-        <p className="hidden md:block text-lg md:text-lg w-2/3">{homeText}</p>
+      <div className="homeText h-screen  hidden md:flex items-center justify-center text-center ">
+        <p className="text-lg w-2/3 leading-8">{homeText}</p>
       </div>
 
-      <div className="block md:hidden py-4 text-center w-full lg:w-2/3 mx-auto h-auto py-32 flex flex-col justify-center items-center">
-        <p className="text-lg transition-all ease-in-out">{textToShow}</p>
+      <div className="homeText block md:hidden text-center w-full px-6 lg:w-2/3 mx-auto h-auto py-32 flex flex-col justify-center items-center">
+        <p className="text-md md:text-lg transition-all ease-in-out">{textToShow}</p>
         <div>
           <button
-            className="bg-yellow-500 text-black px-4 py-2 rounded mt-4"
+            className="bg-secondary text-black px-4 py-2 rounded mt-4"
             onClick={toggleShowFullText}
           >
             {buttonText}
@@ -59,15 +59,15 @@ const Home = () => {
         {/* Details */}
         <div className="text-center pb-6 space-y-4">
           <div className="text-3xl">
-            <span className="font-bold text-yellow-500">Total Supply: </span>
+            <span className="font-bold text-secondary">Total Supply: </span>
             <span>2221</span>
           </div>
           <div className="text-3xl">
-            <span className="font-bold text-yellow-500">Current Price: </span>
+            <span className="font-bold text-secondary">Current Price: </span>
             <span>0.1 SOL</span>
           </div>
           <div>
-            <button className="px-12 py-3 bg-yellow-500 font-bold uppercase rounded-lg text-xl">
+            <button className="px-12 py-3 bg-primary hover:text-2xl transition-all ease-in-out font-bold uppercase rounded-lg text-xl">
               Mint Monster
             </button>
           </div>
@@ -79,7 +79,7 @@ const Home = () => {
         {/* MINT INFO */}
         <div className="w-full md:w-1/2 bg-slate-300 bg-opacity-10 text-white rounded-xl p-6">
           <div className="">
-            <h5 className="mb-4 text-2xl">
+            <h5 className="mb-4 text-2xl text-primary">
               {" "}
               <b>MINTING INFO:</b>
             </h5>
@@ -132,7 +132,7 @@ const Home = () => {
         {/* PROJECT iNFO */}
         <div className="w-full md:w-1/2 bg-slate-300 bg-opacity-10 text-white rounded-xl p-6">
           <div className="">
-            <h5 className="text-2xl font-bold">PROJECT INFO:</h5>
+            <h5 className="text-2xl font-bold text-primary">PROJECT INFO:</h5>
             <br />
           </div>
           <div className="">
