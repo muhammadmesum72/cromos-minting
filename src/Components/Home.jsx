@@ -53,8 +53,8 @@ const Home = () => {
 
       <div className="flex flex-col items-center justify-center gap-12">
         {/* nft */}
-        <div className="w-96 shadow-xl">
-          <img src={Nft} alt="" className="w-full rounded-xl " />
+        <div className="">
+          <img src={Nft} alt="" className="w-72 md:w-96 shadow-xl rounded-xl " />
         </div>
         {/* Details */}
         <div className="text-center pb-6 space-y-4">
