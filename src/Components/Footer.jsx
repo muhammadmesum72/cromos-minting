@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
     </div>
     <div className='text-center py-4'>
-        2023 Crazzy Monsters NFTs
+      &#169; 2023 Crazzy Monsters NFTs
     </div>
     </div>
 
