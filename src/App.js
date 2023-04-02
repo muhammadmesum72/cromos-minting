@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NftViewer from "./Components/NftViewer";
 import Home from "./Components/Home";
 import Royalties from "./Components/Royalties";
+import Minting from "./Components/Minting";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -21,7 +23,9 @@ function App() {
           ></Route>
           <Route path="/nftviewer" element={<NftViewer />} />
           <Route path="/royalities" element={<Royalties />} />
+          <Route path="/mint" element={<Minting />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );

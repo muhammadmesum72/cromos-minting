@@ -8,33 +8,23 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
+import { navLinks } from "../Data/data";
+import Logo from "../Data/logo.png";
 const Header = () => {
-  const pathname = useLocation().pathname
-  const navLinks = [
-    {
-      name: "Home",
-      path: "/",
-    },
-    {
-      name: "Royalities",
-      path: "/royalities",
-    },
-    {
-      name: "NFT viewer",
-      path: "/nftviewer",
-    },
-  ];
+  const pathname = useLocation().pathname;
+
   const [showMobMenu, setShowMobMenu] = useState(false);
 
   const handleMenuClick = () => setShowMobMenu((prev) => !prev);
 
   return (
     <div className="bg-secondaryDark fixed w-full shadow-xl">
-      
-
       <div className="z-50 flex items-center justify-between py-5  text-white container mx-auto px-4 md:px-0">
         <div className="text-primary uppercase font-bold text-xl">
-          <Link to="/">Crazzy Monster</Link>
+          <Link to="/" className="flex items-center justify-center gap-3">
+            <img src={Logo} alt="" className="w-16" />
+            <h1>Crazzy Monster</h1>
+          </Link>
         </div>
         <div onClick={handleMenuClick} className="block md:hidden ">
           {showMobMenu ? (
@@ -48,7 +38,12 @@ const Header = () => {
           <ul className="inline-flex items-center gap-6 lg:gap-12 font-bold  uppercase">
             {navLinks.map((link) => (
               <li className="hover:text-secondary transition ease-in-out">
-                <Link className={link.path == pathname && "text-secondary"} to={link.path}>{link.name}</Link>
+                <Link
+                  className={link.path == pathname && "text-secondary"}
+                  to={link.path}
+                >
+                  {link.name}
+                </Link>
               </li>
             ))}
             <li>
@@ -79,8 +74,16 @@ const Header = () => {
         <div className="flex flex-col md:hidden h-screen gap-12 items-center justify-center text-lg">
           <ul className="inline-flex flex-col items-center justify-between gap-6 lg:gap-12 font-bold  uppercase">
             {navLinks.map((link) => (
-              <li onClick={() => setShowMobMenu(false)} className="hover:text-primary transition ease-in-out">
-                <Link className={pathname == link.path && "text-primary"} to={link.path}>{link.name}</Link>
+              <li
+                onClick={() => setShowMobMenu(false)}
+                className="hover:text-primary transition ease-in-out"
+              >
+                <Link
+                  className={pathname == link.path && "text-primary"}
+                  to={link.path}
+                >
+                  {link.name}
+                </Link>
               </li>
             ))}
             <li>
