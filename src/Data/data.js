@@ -24,6 +24,6 @@ export const navLinks = [
     },
     {
         name: "Twitter",
-        path : "https://www.discord.com"
+        path : "https://www.twitter.com"
     },
   ]

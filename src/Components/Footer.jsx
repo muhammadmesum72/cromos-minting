@@ -28,7 +28,7 @@ const Footer = () => {
         <div>
         <h1 className='text-xl font-bold border-b w-fit pb-2 my-3'>Social Links</h1>
             {socialLinks.map((link) => (
-                <Link to={link.path}>
+                <Link to={link.path} target="_blank">
                     <h2 className='hover:text-primary w-fit'>{link.name}</h2>
                 </Link>
             ))}
