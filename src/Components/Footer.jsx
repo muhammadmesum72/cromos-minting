@@ -8,8 +8,6 @@ import Logo from "../Data/logo.png";
 const Footer = () => {
   return (
     <div className='bg-primaryDark bg-opacity-70 px-6'>
-    {/* <hr className='' /> */}
-    <div className='border-b w-full py-3 md:py-3 border-white '></div>
     <div className=' grid grid-cols-1 md:grid-cols-4 py-6 md:py-0 w-full mx-auto'>
         {/* Logo */}
         <div className='flex items-center justify-center'>
