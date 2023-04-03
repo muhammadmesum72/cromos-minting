@@ -1,10 +1,9 @@
-import React, { useState } from "react";
-import Nft from "../Data/Nft.jpg";
+import React from "react";
 
 const Home = () => {
   return (
-    <div className="container mx-auto py-12">
-      <div className="pt-24 text-lg leading-8 flex flex-col items-center justify-center px-12 text-center gap-6">
+    <div className="container mx-auto py-12 ">
+      <div className="pt-24 text-inherit leading-8 flex flex-col items-center justify-around px-12 text-center md:text-2xl xl:text-2xl gap-6 h-auto lg:h-screen">
           <p>
             Once upon a time, in a land far away, lived a group of cartoony and
             freaky apes. One little ape, however, was different from the rest.
