@@ -4,7 +4,7 @@ import HomeBanner from "../Data/HomeBanner.jpg"
 const Home = () => {
   return (
     <div className="container mx-auto py-12 ">
-      <div className="pt-24 lg:pt-48 text-inherit leading-8 flex flex-col items-center justify-around px-12 text-center md:text-2xl xl:text-2xl gap-6 h-auto lg:h-screen">
+      <div className="pt-24 lg:pt-42 text-inherit leading-8 flex flex-col items-center justify-around px-12 text-center md:text-lg  gap-6 h-auto lg:h-screen">
         <img src={HomeBanner} alt="" className="rounded-xl "/>
           <p>
             Once upon a time, in a land far away, lived a group of cartoony and
