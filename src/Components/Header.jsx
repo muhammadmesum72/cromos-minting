@@ -18,7 +18,7 @@ const Header = () => {
   const handleMenuClick = () => setShowMobMenu((prev) => !prev);
 
   return (
-    <div className="bg-secondaryDark fixed w-full shadow-xl">
+    <div className="bg-secondaryDark fixed top-0 w-full shadow-xl">
       <div className="z-50 flex items-center justify-between py-5  text-white container mx-auto px-4 md:px-0">
         <div className="text-primary uppercase font-bold text-xl">
           <Link to="/" className="flex items-center justify-center gap-3">

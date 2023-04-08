@@ -3,9 +3,12 @@ import HomeBanner from "../Data/HomeBanner.jpg"
 
 const Home = () => {
   return (
-    <div className="container mx-auto py-12 ">
-      <div className="pt-24 lg:pt-42 text-inherit leading-8 flex flex-col items-center justify-around px-12 text-center md:text-lg  gap-6 h-auto lg:h-screen">
-        <img src={HomeBanner} alt="" className="rounded-xl "/>
+    <div className="container mx-auto">
+      <div className="text-center w-full pt-24 pb-12 px-6 md:px-0 xl:pb-24">
+        <div className="w-fit mx-auto py-9">
+        <img src={HomeBanner} alt="" className="rounded-xl my-6 md:my-6 w-full"/>
+        </div>
+        <div className="leading-10 space-y-9 text-lg md:text-2xl xl:text-3xl xl:space-y-12">
           <p>
             Once upon a time, in a land far away, lived a group of cartoony and
             freaky apes. One little ape, however, was different from the rest.
@@ -35,6 +38,8 @@ const Home = () => {
             utilities and royalty programs, giving you access to exclusive perks
             and rewards.
           </p>
+        </div>
+
       </div>
     </div>
   );

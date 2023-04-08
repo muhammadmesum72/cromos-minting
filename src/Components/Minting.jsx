@@ -30,7 +30,7 @@ const Minting = () => {
             <span className="font-bold text-secondary">Current Price: </span>
             <span>0.1 SOL</span>
           </div>
-          <div className='flex flex-row items-center justify-center gap-6'>
+          <div className='flex flex-row items-center justify-center gap-6 pt-4 pb-4'>
             <button onClick={decreaseMintValue} className='p-1 text-3xl font-bold text-black rounded-xl px-6 bg-gray-400 hover:bg-secondary transition-all ease-in-out active:text-2xl '>-</button>
             <div className={mintValue !== 0 ? 'text-4xl font-bold text-primary' : 'text-3xl font-bold'}>{mintValue}</div>
             <button onClick={increaseMintValue} className='p-1 text-3xl font-bold text-black rounded-xl px-6 bg-gray-400 hover:bg-secondary transition-all ease-in-out active:text-2xl '>+</button>
