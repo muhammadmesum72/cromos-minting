@@ -11,7 +11,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { navLinks } from "../Data/data";
 import Logo from "../Data/logo.png";
 const Header = () => {
-  const pathname = useLocation().pathname;
+  const path = useLocation().pathname;
 
   const [showMobMenu, setShowMobMenu] = useState(false);
 
@@ -37,9 +37,9 @@ const Header = () => {
         <div className="hidden md:flex  gap-12 items-center justify-between text-lg">
           <ul className="inline-flex items-center gap-6 lg:gap-12 font-bold  uppercase">
             {navLinks.map((link) => (
-              <li className="hover:text-secondary transition ease-in-out">
+              <li key={link.id} className="hover:text-secondary transition ease-in-out">
                 <Link
-                  className={link.path == pathname && "text-secondary"}
+                  className={link.path === path ? "text-secondary" : undefined}
                   to={link.path}
                 >
                   {link.name}
@@ -75,11 +75,12 @@ const Header = () => {
           <ul className="inline-flex flex-col items-center justify-between gap-6 lg:gap-12 font-bold  uppercase">
             {navLinks.map((link) => (
               <li
+              key={link.id}
                 onClick={() => setShowMobMenu(false)}
                 className="hover:text-primary transition ease-in-out"
               >
                 <Link
-                  className={pathname == link.path && "text-primary"}
+                  className={link.path ===  path ? "text-primary" : undefined}
                   to={link.path}
                 >
                   {link.name}

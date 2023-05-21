@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="container mx-auto">
       <div className="text-center w-full pt-24 pb-12 px-6 md:px-0 xl:pb-24">
-        <div className="w-fit mx-auto py-9">
+        <div className="w-96 mx-auto py-9">
         <img src={HomeBanner} alt="" className="rounded-xl my-6 md:my-6 w-full"/>
         </div>
         <div className="leading-10 space-y-9 text-lg md:text-2xl xl:text-3xl xl:space-y-12">

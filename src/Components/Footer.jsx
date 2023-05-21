@@ -23,9 +23,11 @@ const Footer = () => {
             Crazzy Monsters sitemap
           </h1>
           {navLinks.map((link) => (
-            <Link to={link.path}>
-              <h2 className="hover:text-primary w-fit">{link.name}</h2>
-            </Link>
+            <div key={link.id}>
+              <Link to={link.path}>
+                <h2 className="hover:text-primary w-fit">{link.name}</h2>
+              </Link>
+            </div>
           ))}
         </div>
         {/* Social Links */}
@@ -34,7 +36,7 @@ const Footer = () => {
             Social Links
           </h1>
           {socialLinks.map((link) => (
-            <Link to={link.path} target="_blank">
+            <Link key={link.id} to={link.path} target="_blank">
               <h2 className="hover:text-primary w-fit">{link.name}</h2>
             </Link>
           ))}
