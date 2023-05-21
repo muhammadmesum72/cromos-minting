@@ -16,8 +16,6 @@ const NftViewer = () => {
     <>
       {isPopupOpen ? (
         <div onClick={closeModal} className="fixed w-full h-screen bg-opacity-80 flex items-center justify-center bg-gray-700 top-1/2 left-1/2 right-auto bottom-auto -mr-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
-          {/* <img src={selectedNft.nft} alt="" /> */}
-          {/* <button  className="" onClick={() => closeModal()}>X</button> */}
           <div className="md:h-full p-9 ">
             <img src={selectedNft.nft} alt="" className="relative md:h-full rounded-xl shadow-xl" />
 
